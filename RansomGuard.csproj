@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>Resources\shield.ico</ApplicationIcon>
+    <AssemblyName>RansomGuard</AssemblyName>
+    <RootNamespace>RansomGuard</RootNamespace>
+    <Version>1.0.0</Version>
+    <Description>Ransomware activity monitor and process guard for Windows</Description>
+
+    <!-- Single-file portable publishing -->
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>true</SelfContained>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <PublishTrimmed>false</PublishTrimmed>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\shield.ico" />
+  </ItemGroup>
+
+  <!-- Exclude TestTools and publish directories from compilation -->
+  <ItemGroup>
+    <Compile Remove="TestTools\**" />
+    <Content Remove="TestTools\**" />
+    <None Remove="TestTools\**" />
+    <Compile Remove="publish\**" />
+    <Content Remove="publish\**" />
+    <None Remove="publish\**" />
+  </ItemGroup>
+
+</Project>
