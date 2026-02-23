@@ -4,8 +4,8 @@
 
 RansomGuard monitors every fixed and removable drive on your machine for file activity patterns that match known ransomware behavior — and alerts you (or kills the offending process) before your files are gone.
 
-> ⬇️ **[Download latest release → RansomGuard.exe](https://github.com/daoudz/ransom-guard/releases/latest/download/RansomGuard.exe)**
-> No installation needed. Just run it.
+> ⬇️ **[Download RansomGuard.exe → v1.0.0](https://github.com/daoudz/ransom-guard/releases/download/v1.0.0/RansomGuard.exe)**  
+> **72 MB · Self-contained · No installation needed · Windows 10/11 x64**
 
 ---
 
@@ -24,19 +24,7 @@ RansomGuard monitors every fixed and removable drive on your machine for file ac
 | 📊 **Live dashboard** | Dark-themed real-time activity feed showing events/sec, uptime, drive count, and full threat history |
 | 🔔 **System tray** | Runs silently in the background; pops up an alert dialog when a threat is detected |
 
----
 
-## 🖥️ Screenshots
-
-> Dashboard with live activity feed and threat history
-
-![Dashboard](https://github.com/daoudz/ransom-guard/assets/dashboard.png)
-
-> Alert dialog when a suspicious process is detected
-
-![Alert](https://github.com/daoudz/ransom-guard/assets/alert.png)
-
----
 
 ## 🚀 Getting Started
 
